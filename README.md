@@ -4,25 +4,9 @@ You are given a stack of books and their orientations, flipped or not (defined b
 The goal is to flip stacks of books one at a time to get all the books in the same orientation.
 Implements a BFS and DFS algorithm.
 
+### Additional Information:
 
-### Setting up the environment
-
-Follow the command line instruction below to initialize you repository
-locally. Replace `YOUR-GITHUB-REPO-HERE` with the url that GitHub
-generates for you repository.
-
-```
-git clone YOUR-GITHUB-REPO-HERE
-
-conda env create --file csci360_prog_assingment_1.txt
-
-pip install -r requirements.txt
-
-```
-
-### Writing Your Code:
-
-[`lab1_utils.py`](`lab1_utils.py`) contains
+[`utils.py`](`utils.py`) contains
 the `TextbookStack` class. The constructor for this class expects two
 lists that represents the order. The first list `initial_order` is a
 list of length `n` that expects each integer `[0, n-1]` to be present
@@ -30,7 +14,7 @@ once, The second list `initial_orientation` should be a list of length
 `n` of exclusively `0`s and `1`s. Will represent the Textbook facing up.
 
 ```
->>> from lab1_utils import TextbookStack
+>>> from utils import TextbookStack
 
 # Construct a stack of books in reverse order
 >>> stack = TextbookStack(initial_order=[2, 1, 0], initial_orientations=[0, 0, 0])
